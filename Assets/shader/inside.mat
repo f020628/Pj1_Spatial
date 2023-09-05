@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: t
-  m_Shader: {fileID: 4800000, guid: 9bb5931b943c26e4ebe7f1b9e5e4cde0, type: 3}
+  m_Name: inside
+  m_Shader: {fileID: 4800000, guid: 9812e949c561fc544adbf6733f9ffa48, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -16,7 +16,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2600
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -25,12 +25,9 @@ Material:
     m_TexEnvs:
     - _Texture:
         m_Texture: {fileID: 2800000, guid: 30ad3751436a2e947a116c52ccb52608, type: 3}
-        m_Scale: {x: -1, y: 1}
+        m_Scale: {x: -1, y: 10}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - _Intensity: 0.925
-    - _Pow: 2.82
-    m_Colors:
-    - _MainColor: {r: 2.3736696, g: 1.7579265, b: 0.3694863, a: 0.56078434}
+    m_Floats: []
+    m_Colors: []
   m_BuildTextureStacks: []
