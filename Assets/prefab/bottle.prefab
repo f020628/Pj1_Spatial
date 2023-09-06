@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 323228498739895076}
   - component: {fileID: 591294854954376102}
   - component: {fileID: 5565332934359371753}
-  - component: {fileID: 7800398054711242230}
+  - component: {fileID: -8068835876289188494}
   m_Layer: 6
   m_Name: bottle
   m_TagString: Untagged
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08118079, y: 0.08118077, z: 0.27950865}
   m_Center: {x: 0, y: 9.930144e-16, z: 0.13975433}
---- !u!114 &7800398054711242230
+--- !u!114 &-8068835876289188494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
