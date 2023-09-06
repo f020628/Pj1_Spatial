@@ -46,7 +46,6 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(characterController.isGrounded);
     }
 
     public void Move()
@@ -71,7 +70,7 @@ public class Player : MonoBehaviour
         transform.rotation *= Quaternion.Euler(bodyRotation);
 
         camRotation = CameraControl.Instance.transform.localRotation.eulerAngles;
-        CameraControl.Instance.transform.localRotation = Quaternion.Euler(new Vector3(Mathf.Clamp(camRotation.x, -75, 75), camRotation.y, camRotation.z));
+        //CameraControl.Instance.transform.localRotation = Quaternion.Euler(new Vector3(Mathf.Clamp(camRotation.x, -75, 75), camRotation.y, camRotation.z));
     } 
 
     

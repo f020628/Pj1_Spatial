@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class Drinking : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class Drinking : MonoBehaviour
     private int drunkLevel = 0;
 
     public Volume volume;
+    public GameObject bag;
+    public Collider shell;
+
+    private bool flag1 = false;
+    private bool flag2 = false;
+    private float value = 0;
     private void Start()
     {
         Instance = this;
@@ -21,6 +28,16 @@ public class Drinking : MonoBehaviour
     }
     void Update()
     {
+        if (flag1)
+        {
+            ((LensDistortion)volume.profile.components[2]).intensity.SetValue(new FloatParameter(value, true));
+        }
+        
+        if (flag2)
+        {
+            Vector3 camRotation = new Vector3(rotateX, 0, rotateZ) * Time.deltaTime;
+            CameraControl.Instance.transform.rotation *= Quaternion.Euler(camRotation);
+        }
         
     }
 
@@ -36,8 +53,7 @@ public class Drinking : MonoBehaviour
                     cup.transform.GetChild(1).gameObject.SetActive(true);
                     cup.full = true;
                     Title.Instance.Display("Need some more.");
-                    
-                    Drunk();
+                    bottle.transform.GetChild(0).gameObject.SetActive(false);
                 }
                 else if (!emptyChecks[i] && cup.full)
                 {
@@ -55,6 +71,9 @@ public class Drinking : MonoBehaviour
 
     Tween tween1;
     Tween tween2;
+    Tween tween3;
+    float rotateX = -2f;
+    float rotateZ = -2f;
     public void Drunk()
     {
         drunkLevel++;
@@ -65,21 +84,25 @@ public class Drinking : MonoBehaviour
                 break;
             case 2:
                 volume.profile.components[2].active = true;
-                float value = volume.profile.components[2].parameters[2].GetValue<float>();
-                tween1 = DOTween.To(() => value, x => value = x, 0.4f, 2.5f).SetLoops(-1,LoopType.Yoyo);
+                value = -0.3f;
+                tween1 = DOTween.To(() => value, x => value = x, 0.4f, 2.5f).SetLoops(-1, LoopType.Yoyo);
+                flag1 = true;
                 break;
             case 3:
                 volume.profile.components[3].active = true;
                 break;
             case 4:
-                Transform x = CameraControl.Instance.transform;
-                
+                flag2 = true;
+                tween2 = DOTween.To(() => rotateX, (x) => rotateX = x, 2f, 2f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutQuint);
+                tween3 = DOTween.To(() => rotateZ, (x) => rotateZ = x, 2f, 2f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutQuint);
                 break;
             case 5:
                 volume.profile.components[4].active = true;
-
                 break;
-
+            case 6:
+                bag.SetActive(true);
+                shell.enabled = false;
+                break;
         }
     }
 
@@ -87,6 +110,7 @@ public class Drinking : MonoBehaviour
     {
         tween1.Kill();
         tween2.Kill();
+        tween3.Kill();
         volume.profile.components[1].active = false;
         volume.profile.components[2].active = false; 
         volume.profile.components[3].active = false;

@@ -31,19 +31,20 @@ public class GameManager : MonoBehaviour
         {
 
         }
-
-
-        Blackout();
         currentScene++;
-        SceneManager.LoadScene(currentScene);
+        Blackout();
+        Invoke(nameof(BlackoutLoad), 3f);
         
     }
 
     public void Blackout()
     {
         blackout.gameObject.SetActive(true);
-        var value = blackout.color.a;
-        Tween tween = DOTween.To(() => value, x => value = x, 1f, 2.5f).SetLoops(1, LoopType.Yoyo).OnComplete(()=>blackout.gameObject.SetActive(false));
-        
+        var value = blackout.DOColor(Color.black, 3.1f).SetLoops(2, LoopType.Yoyo).OnComplete( () => { blackout.gameObject.SetActive(false); Player.Instance.allowed = true; Drinking.Instance.Drunk(); } ); 
+    }
+
+    public void BlackoutLoad()
+    {
+        SceneManager.LoadScene(currentScene);
     }
 }

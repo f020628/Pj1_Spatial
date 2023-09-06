@@ -10,13 +10,22 @@ public class Cup : Item
         if (full)
         {
             gameObject.transform.GetChild(1).gameObject.SetActive(false);
+
+            Player.Instance.allowed = false;
+
             Title.Instance.Display(content);
             full = false;
+            Invoke("BlackOut", 1f);
         }
         else
         {
             Title.Instance.Display("Hmm..");
         }
+    }
+
+    private void BlackOut()
+    {
+        GameManager.Instance.Blackout();
     }
 
 }
