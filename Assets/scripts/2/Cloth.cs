@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cloth : MonoBehaviour
+public class Cloth : Item
 {
-    // Start is called before the first frame update
-    void Start()
+    public static bool flag = false;
+    public override void OnInteract()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        if (flag)
+        {
+            Level2.Instance.WearingCheck();
+            Destroy(gameObject);
+        }
         
     }
 }

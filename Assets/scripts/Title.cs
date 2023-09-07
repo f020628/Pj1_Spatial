@@ -21,10 +21,18 @@ public class Title : MonoBehaviour
 
 
     Tween tween;
+    public Tween tween2;
     public void Display(string content)
     {
         tween.Kill();
         text.text = "";
         tween = text.DOText(content, 2).OnComplete(async () => { await Task.Delay(2000); text.text = ""; });
+    }
+
+    public void DisplayEnvironment(string content)
+    {
+        tween2.Kill();
+        environmentTitle.text = "";
+        tween2 = text.DOText(content, 2).OnComplete(async () => { await Task.Delay(2000);environmentTitle.text = ""; });
     }
 }

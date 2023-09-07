@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Curtain : Item
 {
-    
+    public GameObject open;
+    public static bool flag = false;
     void Start()
     {
         
@@ -12,6 +13,7 @@ public class Curtain : Item
 
     public override void OnInteract()
     {
-        
+        if(flag)
+            open.SetActive(true);
     }
 }
