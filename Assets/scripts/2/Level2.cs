@@ -10,10 +10,13 @@ public class Level2 : MonoBehaviour
     [HideInInspector]
     public int wearing = 0;
     [HideInInspector]
-    public GameObject player = Player.Instance.gameObject;
+    public GameObject player;
 
+    public Light pointLight;
+    public Light pointLight2;
     public void Awake()
     {
+        player = Player.Instance.gameObject;
         Instance = this;
     }
 
@@ -21,7 +24,7 @@ public class Level2 : MonoBehaviour
     {
         Player.Instance.transform.SetPositionAndRotation(new Vector3(-3.14f, 1.14f, -1.58f), Quaternion.Euler(new Vector3(0, 90, -91.2f)));
         Player.Instance.moveFlag = false;
-        player.transform.DORotate(new Vector3(0, 90, 0), 2).OnComplete(() => { player.transform.DORotate(new Vector3(180, 0, 0), 2, RotateMode.Fast); Player.Instance.moveFlag = true; }).SetDelay(2);
+        player.transform.DORotate(new Vector3(0, 90, 0), 2).OnComplete(() => { Player.Instance.moveFlag = true; }).SetDelay(2);
     }
 
     void Update()
@@ -44,6 +47,13 @@ public class Level2 : MonoBehaviour
         else
         {
             Title.Instance.DisplayEnvironment("Pack your bag, hurry up!");
+            Drawer.flag = true;
         }
     }
+
+    //public void LightOn()
+    //{
+    //    pointLight.gameObject.SetActive(true);
+    //    pointLight2.gameObject.SetActive(true);
+    //}
 }

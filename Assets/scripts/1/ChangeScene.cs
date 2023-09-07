@@ -8,6 +8,8 @@ public class ChangeScene : MonoBehaviour
     GameObject player;
     private static bool drop = false;
     private float speed = 0f;
+    public GameObject ceiling;
+
     void Start()
     {
         player = Player.Instance.gameObject;
@@ -25,6 +27,7 @@ public class ChangeScene : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        ceiling.SetActive(false);
         Player.Instance.moveFlag = false;
         Player.Instance.rotateFlag = false;
         player.transform.DOMove(transform.position, 1).OnComplete(() => player.transform.DORotate(new Vector3(180, 0, 0), 2, RotateMode.Fast).OnComplete(() => { drop = true; Player.Instance.rotateFlag = true; }));

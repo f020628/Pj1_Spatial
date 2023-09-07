@@ -7,11 +7,8 @@ public class Cloth : Item
     public static bool flag = false;
     public override void OnInteract()
     {
-        if (flag)
-        {
-            Level2.Instance.WearingCheck();
+        Level2.Instance.WearingCheck();
+        if(flag)
             Destroy(gameObject);
-        }
-        
     }
 }

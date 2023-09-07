@@ -27,7 +27,7 @@ public class CameraControl : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(ray, out hit, 100, 1 << 6))
         {
-            //Debug.Log(hit.collider.gameObject.GetComponent<Item>());
+            Debug.Log(hit.collider.gameObject.GetComponent<Item>());
             if (hit.collider.gameObject.GetComponent<Item>() != null)
             {
                 hint.SetActive(true);

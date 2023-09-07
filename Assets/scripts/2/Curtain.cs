@@ -6,14 +6,15 @@ public class Curtain : Item
 {
     public GameObject open;
     public static bool flag = false;
-    void Start()
-    {
-        
-    }
 
     public override void OnInteract()
     {
-        if(flag)
+        if (flag)
+        {
             open.SetActive(true);
+            gameObject.SetActive(false);
+        }
+            
+        
     }
 }
