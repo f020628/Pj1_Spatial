@@ -22,10 +22,11 @@ public class GameManager : MonoBehaviour
         if(currentScene == 0)
         {
             Drinking.Instance.CleanV();
+            Player.Instance.transform.localScale = new Vector3(1, 0.7f, 1);
         }
         else if(currentScene == 1)
         {
-
+            
         }
         else if(currentScene == 2)
         {
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
         }
         currentScene++;
         Blackout();
-        Invoke(nameof(BlackoutLoad), 3f);
+        Invoke(nameof(LoadS), 3f);
         
     }
 
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
         var value = blackout.DOColor(Color.black, 3.1f).SetLoops(2, LoopType.Yoyo).OnComplete( () => { blackout.gameObject.SetActive(false); Player.Instance.allowed = true; Drinking.Instance.Drunk(); } ); 
     }
 
-    public void BlackoutLoad()
+    public void LoadS()
     {
         SceneManager.LoadScene(currentScene);
     }

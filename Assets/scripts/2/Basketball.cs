@@ -4,17 +4,41 @@ using UnityEngine;
 
 public class Basketball : Item
 {
+    public static Basketball Instance;
     public static bool flag = false;
     public Vector3 playerPos;
     public bool hold = false;
     void Start()
     {
-
+        Instance = this;
     }
 
     public override void OnInteract()
     {
-        hold = true;
+        if (flag)
+        {
+            if (hold)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    if(Player.Instance.transform.position.x <= -1)
+                    {
+                        transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                        transform.GetComponent<Rigidbody>().AddForce(CameraControl.Instance.gameObject.transform.forward * 140f);
+                        hold = false;
+                    }
+                    else
+                    {
+                        Title.Instance.Display("Why not make a long shot?");
+                    }
+                }
+            }
+            else
+            {
+                hold = true;
+            }
+            
+        }
 
     }
 
@@ -24,18 +48,13 @@ public class Basketball : Item
         {
 
             transform.position = CameraControl.Instance.gameObject.transform.position + CameraControl.Instance.gameObject.transform.forward * 0.7f;
-            if (Input.GetMouseButtonDown(0))
-            {
-                transform.GetComponent<Rigidbody>().AddForce(CameraControl.Instance.gameObject.transform.forward * 1f);
-                hold = false;
-            }
             
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (hold)
+        if (hold && !collision.gameObject.CompareTag("Player"))
         {
             transform.position = playerPos;
             hold = false;

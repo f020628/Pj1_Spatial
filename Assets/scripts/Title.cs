@@ -10,6 +10,7 @@ public class Title : MonoBehaviour
     public static Title Instance;
     public Text text;
     public Text environmentTitle;
+    public Image image;
     public Canvas canvas;
 
     void Awake()
@@ -33,6 +34,16 @@ public class Title : MonoBehaviour
     {
         tween2.Kill();
         environmentTitle.text = "";
-        tween2 = environmentTitle.DOText(content, 2).OnComplete(async () => { await Task.Delay(2000);environmentTitle.text = ""; });
+        tween2 = environmentTitle.DOText(content, 2).OnComplete(async () => { await Task.Delay(2500);environmentTitle.text = ""; });
+    }
+
+    public void DisplayImage()
+    {
+        image.gameObject.SetActive(true);
+    }
+
+    public void HideImage()
+    {
+        image.gameObject.SetActive(false);
     }
 }

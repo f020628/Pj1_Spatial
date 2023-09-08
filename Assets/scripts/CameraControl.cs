@@ -36,16 +36,22 @@ public class CameraControl : MonoBehaviour
                     Debug.Log("interacted");
                     hit.collider.gameObject.GetComponent<Item>().OnInteract();
                 }
-                hit.collider.gameObject.GetComponent<Item>().OnLook();
+                if (hit.collider.gameObject.GetComponent<Item>().OnLook())
+                {
+                    Title.Instance.DisplayImage();
+                }
+                else { Title.Instance.HideImage(); }
             }
             else
             {
                 hint.SetActive(false);
+                Title.Instance.HideImage();
             }
         }
         else
         {
             hint.SetActive(false);
+            Title.Instance.HideImage();
         }
     }
 }

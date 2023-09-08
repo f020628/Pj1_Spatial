@@ -13,8 +13,8 @@ public abstract class Item : MonoBehaviour
         Title.Instance.Display(content);
     }
 
-    public virtual void OnLook()
+    public virtual bool OnLook()
     {
-
+        return false;
     }
 }
