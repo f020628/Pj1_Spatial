@@ -13,6 +13,7 @@ public class Curtain : Item
         {
             open.SetActive(true);
             gameObject.SetActive(false);
+            Cloth.flag = true;
         }
             
         

@@ -33,6 +33,6 @@ public class Title : MonoBehaviour
     {
         tween2.Kill();
         environmentTitle.text = "";
-        tween2 = text.DOText(content, 2).OnComplete(async () => { await Task.Delay(2000);environmentTitle.text = ""; });
+        tween2 = environmentTitle.DOText(content, 2).OnComplete(async () => { await Task.Delay(2000);environmentTitle.text = ""; });
     }
 }

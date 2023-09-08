@@ -11,15 +11,17 @@ public class Alarm : Item
 
     void Start()
     {
-        tween1 = transform.DOShakePosition(1,1,10,70).SetLoops(-1);
-        tween2 = CameraControl.Instance.characterCam.DOShakeRotation(2, 10, 10, 70, true).SetLoops(-1).OnStepComplete(()=> Title.Instance.DisplayEnvironment("*ring ring ring*"));
+        tween1 = transform.DOShakePosition(0.3f, 0.1f, 5, 60, false, false).SetLoops(-1);
+        tween2 = CameraControl.Instance.characterCam.DOShakePosition(2f, 0.1f, 7, 70, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*ring ring ring*"); tween2.Restart(); }) ;
+        
     }
 
     public override void OnInteract()
     {
         tween1.Kill();
         tween2.Kill();
-        Cloth.flag = true;
+        Title.Instance.DisplayEnvironment("");
+        Curtain.flag = true;
     }
 
 }

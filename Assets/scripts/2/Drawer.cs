@@ -14,8 +14,8 @@ public class Drawer : Item
     {
         if (flag)
         {
-            Vector3 target = open ? endPos : startPos;
-            transform.DOMove(target, 1.5f);
+            Vector3 target = open ? startPos : endPos;
+            transform.DOLocalMove(target, 1.5f);
             open = !open;
         }
     }

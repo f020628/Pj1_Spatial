@@ -5,6 +5,7 @@ using UnityEngine;
 public class Case : Item
 {
     public static bool flag;
+    public GameObject cap;
     void Start()
     {
         
@@ -12,6 +13,11 @@ public class Case : Item
 
     public override void OnInteract()
     {
-        
+        if (flag)
+        {   
+            Basketball.flag = true;
+            Bag.flag = true; 
+            cap.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 180));
+        }
     }
 }
