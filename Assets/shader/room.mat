@@ -27,7 +27,9 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _EnvironmentReflections: 1
+    - _SpecularHighlights: 0
     m_Colors:
     - _BaseColor: {r: 0.16055535, g: 0.80923104, b: 0.8301887, a: 1}
     - _Color: {r: 0.16055535, g: 0.80923104, b: 0.8301887, a: 1}
