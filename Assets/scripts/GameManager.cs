@@ -26,7 +26,8 @@ public class GameManager : MonoBehaviour
         }
         else if(currentScene == 1)
         {
-            
+
+            Player.Instance.transform.localScale = new Vector3(1, 1, 1);
         }
         else if(currentScene == 2)
         {

@@ -12,9 +12,10 @@ public class Title : MonoBehaviour
     public Text environmentTitle;
     public Image image;
     public Canvas canvas;
-
+    public Color color;
     void Awake()
-    {
+    {   
+        color = text.color;
         Instance = this;
         DontDestroyOnLoad(canvas);
         
