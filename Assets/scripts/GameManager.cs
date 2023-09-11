@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     {
         if(currentScene == 0)
         {
-            Drinking.Instance.CleanV();
             Player.Instance.transform.localScale = new Vector3(1, 0.7f, 1);
         }
         else if(currentScene == 1)

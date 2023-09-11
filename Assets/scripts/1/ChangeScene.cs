@@ -37,6 +37,7 @@ public class ChangeScene : MonoBehaviour
     public static void Stop()
     {
         drop = false;
+        Drinking.Instance.CleanV();
         GameManager.Instance.LoadNextLevel();
     }
 }
