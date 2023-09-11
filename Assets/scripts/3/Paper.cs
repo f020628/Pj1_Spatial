@@ -13,18 +13,20 @@ public class Paper : Item
         {
             if (count == 2)
             {
-                count++;
                 Phone.Instance.count++;
                 Phone.Instance.NewMessage();
             }
             else if (count == 4)
             {
-
+                Phone.Instance.count++;
+                Phone.Instance.NewMessage();
             }
             else if(count == 6)
             {
-
+                Phone.Instance.count++;
+                Phone.Instance.NewMessage();
             }
+            count++;
         }
     }
 
