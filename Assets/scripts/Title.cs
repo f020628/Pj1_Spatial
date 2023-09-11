@@ -31,11 +31,11 @@ public class Title : MonoBehaviour
         tween = text.DOText(content, 2).OnComplete(async () => { await Task.Delay(2000); text.text = ""; });
     }
 
-    public void DisplayEnvironment(string content)
+    public void DisplayEnvironment(string content, float time)
     {
         tween2.Kill();
         environmentTitle.text = "";
-        tween2 = environmentTitle.DOText(content, 2).OnComplete(async () => { await Task.Delay(2500);environmentTitle.text = ""; });
+        tween2 = environmentTitle.DOText(content, time).OnComplete(async () => { await Task.Delay(2500);environmentTitle.text = ""; });
     }
 
     public void DisplayImage()

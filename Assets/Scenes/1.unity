@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.42480737, g: 0.4566325, b: 0.48138767, a: 1}
+  m_IndirectSpecularColor: {r: 0.42477393, g: 0.45658004, b: 0.48129404, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1285,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7854191576239579378, guid: 2997fbc8c8e066a4bb1e396a7588d670, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.002116531
+      value: -0.00068
       objectReference: {fileID: 0}
     - target: {fileID: -4270610980817167452, guid: 2997fbc8c8e066a4bb1e396a7588d670, type: 3}
       propertyPath: m_Name
@@ -1309,7 +1309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -694297498105078719, guid: 2997fbc8c8e066a4bb1e396a7588d670, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00156
+      value: -0.00176
       objectReference: {fileID: 0}
     - target: {fileID: -613426075582188925, guid: 2997fbc8c8e066a4bb1e396a7588d670, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1337,7 +1337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6195372713303540167, guid: 2997fbc8c8e066a4bb1e396a7588d670, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00053
+      value: -0.00059
       objectReference: {fileID: 0}
     - target: {fileID: 6570568873603449988, guid: 2997fbc8c8e066a4bb1e396a7588d670, type: 3}
       propertyPath: m_Name
@@ -1361,7 +1361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9080426909481820277, guid: 2997fbc8c8e066a4bb1e396a7588d670, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00087
+      value: -0.00205
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1698,7 +1698,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: be8d2652ec9ed8a4e9d735621fa01722, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.707
+      value: 0.723
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: be8d2652ec9ed8a4e9d735621fa01722, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2760,7 +2760,8 @@ GameObject:
   - component: {fileID: 369326766}
   - component: {fileID: 369326768}
   - component: {fileID: 369326767}
-  m_Layer: 0
+  - component: {fileID: 369326769}
+  m_Layer: 6
   m_Name: Jacket_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2776,7 +2777,7 @@ Transform:
   m_GameObject: {fileID: 369326765}
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00038194656, y: -5.77513, z: 0.11468994}
+  m_LocalPosition: {x: 1.18, y: -9.72, z: 19.8}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2832,6 +2833,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369326765}
   m_Mesh: {fileID: -2267821849097116276, guid: ce685bbdc262e0446ba0623ef2e0723b, type: 3}
+--- !u!114 &369326769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369326765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8060c9f8523eea8448ab1ad7f5092ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: N/A
+  content: Interacted
 --- !u!1 &372341429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2843,7 +2858,7 @@ GameObject:
   - component: {fileID: 372341430}
   - component: {fileID: 372341432}
   - component: {fileID: 372341431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_787876
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3148,7 +3163,7 @@ GameObject:
   - component: {fileID: 461109210}
   - component: {fileID: 461109212}
   - component: {fileID: 461109211}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1506376 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3442,7 +3457,7 @@ GameObject:
   - component: {fileID: 478305852}
   - component: {fileID: 478305854}
   - component: {fileID: 478305853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1439306
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3939,7 +3954,7 @@ GameObject:
   - component: {fileID: 558227964}
   - component: {fileID: 558227966}
   - component: {fileID: 558227965}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_762026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4022,7 +4037,7 @@ GameObject:
   - component: {fileID: 561967949}
   - component: {fileID: 561967951}
   - component: {fileID: 561967950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1434309
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4934,7 +4949,7 @@ GameObject:
   - component: {fileID: 729206763}
   - component: {fileID: 729206765}
   - component: {fileID: 729206764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1506279
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5803,7 +5818,9 @@ GameObject:
   - component: {fileID: 804290846}
   - component: {fileID: 804290848}
   - component: {fileID: 804290847}
-  m_Layer: 0
+  - component: {fileID: 804290850}
+  - component: {fileID: 804290849}
+  m_Layer: 6
   m_Name: Shirt_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5818,13 +5835,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804290845}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000003774895, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00038194656, y: -5.77513, z: 0.11468994}
+  m_LocalRotation: {x: -0.08240351, y: 0.034538664, z: -0.0028575733, w: 0.99599636}
+  m_LocalPosition: {x: -0.039, y: -5.927, z: -0.102}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 435289169}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -9.436, y: 4.027, z: -0.661}
 --- !u!23 &804290847
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5875,6 +5892,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804290845}
   m_Mesh: {fileID: 8698090394368645421, guid: ce685bbdc262e0446ba0623ef2e0723b, type: 3}
+--- !u!65 &804290849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804290845}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.015284211, y: 0.024796126, z: 0.007664073}
+  m_Center: {x: -0.000011438865, y: 0.055889532, z: 0.0017341529}
+--- !u!114 &804290850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804290845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8060c9f8523eea8448ab1ad7f5092ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: N/A
+  content: Interacted
 --- !u!1 &807953858
 GameObject:
   m_ObjectHideFlags: 0
@@ -5886,7 +5938,7 @@ GameObject:
   - component: {fileID: 807953859}
   - component: {fileID: 807953861}
   - component: {fileID: 807953860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1506376
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6460,8 +6512,7 @@ GameObject:
   - component: {fileID: 892819781}
   - component: {fileID: 892819784}
   - component: {fileID: 892819783}
-  - component: {fileID: 892819782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloth (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6483,27 +6534,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1263089720}
   m_LocalEulerAnglesHint: {x: -29.897, y: 0, z: 0}
---- !u!65 &892819782
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 892819780}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.0002862543, y: 0.0021105413, z: 0.003652208}
-  m_Center: {x: 0, y: -0.000007308614, z: 0.000020644458}
 --- !u!23 &892819783
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6971,7 +7001,7 @@ GameObject:
   - component: {fileID: 1019007925}
   - component: {fileID: 1019007927}
   - component: {fileID: 1019007926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloth (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6986,10 +7016,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019007924}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.110116675, y: -0, z: -0, w: 0.9939187}
-  m_LocalPosition: {x: 0.957, y: 1.2678108, z: -0.16391012}
-  m_LocalScale: {x: 1, y: 0.8738094, z: 0.11967961}
-  m_ConstrainProportionsScale: 1
+  m_LocalRotation: {x: -0.6629625, y: -0, z: -0, w: 0.74865264}
+  m_LocalPosition: {x: 0.957, y: 0.699, z: 0.3}
+  m_LocalScale: {x: 1, y: 0.5, z: 0.11967961}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 558227964}
   - {fileID: 1456503207}
@@ -7006,7 +7036,7 @@ Transform:
   - {fileID: 807953859}
   - {fileID: 461109210}
   m_Father: {fileID: 990420683}
-  m_LocalEulerAnglesHint: {x: 12.644, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -83.052, y: 0, z: 0}
 --- !u!114 &1019007926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7264,7 +7294,7 @@ GameObject:
   - component: {fileID: 1021993637}
   - component: {fileID: 1021993639}
   - component: {fileID: 1021993638}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1438298
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7465,7 +7495,7 @@ GameObject:
   - component: {fileID: 1039382393}
   - component: {fileID: 1039382395}
   - component: {fileID: 1039382394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1506290
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8097,7 +8127,7 @@ GameObject:
   - component: {fileID: 1082335149}
   - component: {fileID: 1082335151}
   - component: {fileID: 1082335150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_787193
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9641,7 +9671,7 @@ GameObject:
   - component: {fileID: 1263089723}
   - component: {fileID: 1263089722}
   - component: {fileID: 1263089721}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloth (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9658,7 +9688,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.29632246, y: 0.44673368, z: 0.48157468, w: 0.69333094}
   m_LocalPosition: {x: -0.38, y: 3.097, z: 1.185}
-  m_LocalScale: {x: 30, y: 30, z: 30}
+  m_LocalScale: {x: 91.6, y: 91.6, z: 91.6}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 892819781}
@@ -9683,8 +9713,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0002862543, y: 0.0021105413, z: 0.003652208}
-  m_Center: {x: 0, y: -0.000007308614, z: 0.000020644458}
+  m_Size: {x: 0.0021539803, y: 0.0021105425, z: 0.00365221}
+  m_Center: {x: 0.0009338656, y: -0.0000073086726, z: 0.000020644426}
 --- !u!114 &1263089722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10973,7 +11003,7 @@ GameObject:
   - component: {fileID: 1456503207}
   - component: {fileID: 1456503209}
   - component: {fileID: 1456503208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_762798
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11918,7 +11948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c688b9c6af114be46989958269b12350, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.675
+      value: -2.108
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c688b9c6af114be46989958269b12350, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13722,7 +13752,7 @@ GameObject:
   - component: {fileID: 1870082147}
   - component: {fileID: 1870082149}
   - component: {fileID: 1870082148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1439307
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15232,7 +15262,7 @@ GameObject:
   - component: {fileID: 2010919714}
   - component: {fileID: 2010919716}
   - component: {fileID: 2010919715}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1249554
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15554,7 +15584,7 @@ GameObject:
   - component: {fileID: 2040649832}
   - component: {fileID: 2040649834}
   - component: {fileID: 2040649833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1249553
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Laptop : Item
 {
-    public static bool on = true;
+    public static bool on = false;
     public static bool flag = false;
     void Start()
     {
@@ -13,7 +13,12 @@ public class Laptop : Item
 
     public override void OnInteract()
     {
-        if (flag)
+        if (flag && !on)
+        {
+            on = true;
+            
+        }
+        else if(flag && on)
         {
             Printer.flag = true;
         }

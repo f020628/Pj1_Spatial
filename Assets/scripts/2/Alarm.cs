@@ -11,8 +11,8 @@ public class Alarm : Item
 
     void Start()
     {
-        tween1 = transform.DOShakePosition(0.3f, 0.1f, 5, 60, false, false).SetLoops(-1);
-        tween2 = CameraControl.Instance.characterCam.DOShakePosition(2f, 0.1f, 7, 70, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*ring ring ring*"); tween2.Restart(); }) ;
+        tween1 = transform.DOShakePosition(0.2f, 0.07f, 7, 60, false, false).SetLoops(-1);
+        tween2 = CameraControl.Instance.characterCam.DOShakePosition(0.4f, 0.03f, 4, 60, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*ring ring ring*", 2); tween2.Restart(); }) ;
         
     }
 
@@ -20,7 +20,7 @@ public class Alarm : Item
     {
         tween1.Kill();
         tween2.Kill();
-        Title.Instance.DisplayEnvironment("");
+        Title.Instance.DisplayEnvironment("",0);
         Curtain.flag = true;
     }
 

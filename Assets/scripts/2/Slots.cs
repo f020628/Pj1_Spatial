@@ -34,7 +34,7 @@ public class Slots : MonoBehaviour
     private void Fall()
     {   
         Player.Instance.allowed = false;
-        Title.Instance.DisplayEnvironment("*Punch*");
+        Title.Instance.DisplayEnvironment("*Punch*",1);
         Player.Instance.transform.DORotate(new Vector3(-90, 90, 0), 0.8f).OnComplete(GameManager.Instance.LoadNextLevel);
     }
 }
