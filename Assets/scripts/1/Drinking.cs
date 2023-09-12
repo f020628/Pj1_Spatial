@@ -115,6 +115,6 @@ public class Drinking : MonoBehaviour
         volume.profile.components[2].active = false; 
         volume.profile.components[3].active = false;
         volume.profile.components[4].active = false;
-
+        Debug.Log(volume.profile.components[1].active);
     }
 }

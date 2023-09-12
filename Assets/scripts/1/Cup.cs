@@ -15,7 +15,8 @@ public class Cup : Item
 
             Title.Instance.Display(content);
             full = false;
-            Invoke("BlackOut", 1f);
+            //sfx ºÈË®
+            Invoke(nameof(BlackOut), 1f);
         }
         else
         {

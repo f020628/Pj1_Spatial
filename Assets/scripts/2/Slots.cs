@@ -18,7 +18,7 @@ public class Slots : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(123);
+        //sfx 欢呼/电子叮咚（成功命中
         if (collision.collider.CompareTag("Basketball"))
         {
             count++;
@@ -26,7 +26,6 @@ public class Slots : MonoBehaviour
         }
         if (count == 3)
         {
-            //Player.Instance.allowed = false;
             Basketball.Instance.transform.DOMove(CameraControl.Instance.transform.position, 1.2f).OnComplete(Fall);
         }
     }

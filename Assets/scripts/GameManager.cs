@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,11 +11,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public int currentScene = 0;
     public RawImage blackout;
-
+    public Volume volume;
     void Awake()
     {
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(volume);
     }
 
     public void LoadNextLevel()

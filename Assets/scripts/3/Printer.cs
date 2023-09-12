@@ -19,6 +19,7 @@ public class Printer : Item
         {
             Fly();
             Title.Instance.Display("Oh my...");
+            //sfx 打印机运作/故障
         }
 
     }

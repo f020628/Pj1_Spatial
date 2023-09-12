@@ -2841,6 +2841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentScene: 0
   blackout: {fileID: 104501840}
+  volume: {fileID: 1073143134}
 --- !u!4 &361826441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400030, guid: abf604235fd5ccd4798c42e6b60b0ae4, type: 3}
@@ -7673,7 +7674,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras: []
-  m_RendererIndex: -1
+  m_RendererIndex: 0
   m_VolumeLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -15602,6 +15603,7 @@ MonoBehaviour:
   environmentTitle: {fileID: 1232981080}
   image: {fileID: 1751739344}
   canvas: {fileID: 127864663}
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1001 &1907912186
 PrefabInstance:
   m_ObjectHideFlags: 0

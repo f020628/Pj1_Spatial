@@ -57,6 +57,7 @@ public class Level2 : MonoBehaviour
         }
         else
         {
+            //sfx Ì¨´Ê
             Title.Instance.DisplayEnvironment("Pack your bag, hurry up!",2);
             Drawer.flag = true;
             Pencils.flag = true;

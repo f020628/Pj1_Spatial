@@ -81,5 +81,7 @@ public class Phone : Item
         text.text = "You have a new message";
         material.color = Color.white;
         flag = true;
+
+        //sfx 收到消息提示音
     }
 }

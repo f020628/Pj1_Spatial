@@ -27,6 +27,7 @@ public class ChangeScene : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //sfx 聚光灯打下来噔的那种声音/突然发现什么震惊的噔 
         ceiling.SetActive(false);
         Player.Instance.moveFlag = false;
         Player.Instance.rotateFlag = false;

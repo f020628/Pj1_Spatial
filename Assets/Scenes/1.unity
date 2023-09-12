@@ -20,12 +20,12 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 0.3224012, g: 0.35644358, b: 0.4245283, a: 1}
+  m_AmbientEquatorColor: {r: 0.21026169, g: 0.22561412, b: 0.23584908, a: 1}
+  m_AmbientGroundColor: {r: 0.18867922, g: 0.15734953, b: 0.14862938, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_AmbientMode: 1
+  m_SubtractiveShadowColor: {r: 0.990566, g: 0.98749024, b: 0.9111338, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -33,12 +33,12 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 64
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.42480737, g: 0.4566325, b: 0.48138767, a: 1}
+  m_IndirectSpecularColor: {r: 0.42477393, g: 0.45658004, b: 0.48129404, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: bf71bc5795e6ddc4d9f19a4c600523a0, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 7bbf7ecd1ce5c9a4ca96178e83c543f7, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -2630,8 +2630,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.6698113, g: 0.43415177, b: 0.0979441, a: 1}
-  m_Intensity: 20
+  m_Color: {r: 0.9245283, g: 0.7921407, b: 0.48406905, a: 1}
+  m_Intensity: 30
   m_Range: 7.5
   m_SpotAngle: 98.58732
   m_InnerSpotAngle: 93.90914
@@ -2668,7 +2668,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 192
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -5953,6 +5953,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5159052088652700678, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159052088652700678, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6369742052689657557, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7132,15 +7140,15 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.6603774, g: 0.46061876, b: 0.12771448, a: 1}
-  m_Intensity: 64.2
-  m_Range: 1889.1
-  m_SpotAngle: 179
-  m_InnerSpotAngle: 16.033268
+  m_Color: {r: 0.9150943, g: 0.8624066, b: 0.4704966, a: 1}
+  m_Intensity: 37.2
+  m_Range: 285.5663
+  m_SpotAngle: 150.61774
+  m_InnerSpotAngle: 0
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 4096
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -7172,7 +7180,7 @@ Light:
     serializedVersion: 2
     m_Bits: 119
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1.428088, y: 1.2437127}
   m_BounceIntensity: 0
@@ -7192,7 +7200,7 @@ Transform:
   m_GameObject: {fileID: 1030744274}
   serializedVersion: 2
   m_LocalRotation: {x: 0.016186476, y: 0.7338417, z: -0.018056596, w: 0.67888755}
-  m_LocalPosition: {x: -5.3909974, y: 1.702, z: 0.515}
+  m_LocalPosition: {x: -5.195, y: 1.759, z: 0.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7776,14 +7784,14 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.3962264, g: 0.12421343, b: 0.08784264, a: 1}
-  m_Intensity: 5
+  m_Color: {r: 0.3018868, g: 0.12563263, b: 0.06692773, a: 1}
+  m_Intensity: 10
   m_Range: 31
   m_SpotAngle: 30
   m_InnerSpotAngle: 19.145184
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -7819,7 +7827,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 0
+  m_BounceIntensity: 10
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -13542,7 +13550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc49b8e3aa6a6b244bee4dbccac39e52, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.114
+      value: -0.129
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc49b8e3aa6a6b244bee4dbccac39e52, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13586,7 +13594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3198514369382079268, guid: dc49b8e3aa6a6b244bee4dbccac39e52, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0615
+      value: 0.061
       objectReference: {fileID: 0}
     - target: {fileID: -3119236414387510727, guid: dc49b8e3aa6a6b244bee4dbccac39e52, type: 3}
       propertyPath: m_CastShadows

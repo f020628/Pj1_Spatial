@@ -11,7 +11,8 @@ public class Alarm2 : Item
     void Start()
     {
         tween1 = transform.DOShakePosition(0.5f, 0.5f, 10, 60, false, false).SetLoops(-1);
-        tween2 = CameraControl.Instance.characterCam.DOShakePosition(0.4f, 0.05f, 4, 60, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*Beep Beep*", 0.4f); tween2.Restart(); });
+        tween2 = CameraControl.Instance.characterCam.DOShakePosition(0.4f, 0.05f, 4, 60, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*Beep Beep*", 0.4f); tween2.Restart(); //sfx µç×ÓÄÖÖÓ
+        });
 
     }
 
