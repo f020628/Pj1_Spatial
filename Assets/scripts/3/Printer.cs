@@ -19,6 +19,8 @@ public class Printer : Item
         {
             Fly();
             Title.Instance.Display("Oh my...");
+            Paper.flag = true;
+            flag = false;
             //sfx 打印机运作/故障
         }
 
@@ -28,7 +30,7 @@ public class Printer : Item
     {
         for(int i = 0; i < papers.Length; i++)
         {
-            papers[i].transform.DOMove(trans[i].position,1.5f);
+            papers[i].transform.DOMove(trans[i].position, 1.5f);
             papers[i].transform.DOShakeRotation(1.5f);
         }
     }

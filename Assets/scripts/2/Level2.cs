@@ -26,14 +26,6 @@ public class Level2 : MonoBehaviour
     }
 
     float zRotation = 0;
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            Reverse();
-        }
-        //Player.Instance.transform.rotation *= Quaternion.Euler(180 * Time.deltaTime, 0, 0) ;
-    }
 
     public void Reverse()
     {

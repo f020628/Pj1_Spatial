@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,6 +42,15 @@ public class Player : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.Locked;
             }
+        }
+
+        float zRotation = 0;
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            zRotation = zRotation == 0 ? 180 : 0;
+            allowed = false;
+            Vector3 target = new(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, zRotation);
+            transform.DOLocalRotate(target, 1, RotateMode.Fast).OnComplete(() => Player.Instance.allowed = true);
         }
     }
 

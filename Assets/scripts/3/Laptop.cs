@@ -4,26 +4,46 @@ using UnityEngine;
 
 public class Laptop : Item
 {
+    public static Laptop Instance;
     public static bool on = false;
     public static bool flag = false;
-    public Material material;
+    public GameObject screen;
     public Material onMat;
-    void Start()
+    public Material offMat;
+    public static bool end = false;
+    private void Awake()
     {
-        
+        Instance= this;
     }
 
     public override void OnInteract()
     {
         if (flag && !on)
         {
-            on = true;
-            material = onMat;
-            
+            Note.flag = true;
+            turnOn();
+            Player.Instance.moveFlag = true;
         }
-        else if(flag && on)
+        else if (flag && on)
         {
-            Printer.flag = true;
+            turnOff();
+        }
+        else if (end)
+        {
+            GameManager.Instance.LoadNextLevel();
         }
     }
+
+    public void turnOff()
+    {
+        on = false;
+        screen.GetComponent<Renderer>().material = offMat;
+    }
+
+    public void turnOn()
+    {
+        on = true;
+        screen.GetComponent<Renderer>().material = onMat;
+    }
+
 }

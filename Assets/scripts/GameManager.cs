@@ -21,20 +21,20 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        if(currentScene == 0)
+        currentScene++;
+        if(currentScene == 1)
         {
             Player.Instance.transform.localScale = new Vector3(1, 0.7f, 1);
-        }
-        else if(currentScene == 1)
-        {
-
-            Player.Instance.transform.localScale = new Vector3(1, 1, 1);
         }
         else if(currentScene == 2)
         {
 
+            Player.Instance.transform.localScale = new Vector3(1, 1, 1);
         }
-        currentScene++;
+        else if(currentScene == 3)
+        {
+        }
+        
         Blackout();
         Invoke(nameof(LoadS), 3f);
         

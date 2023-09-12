@@ -13,7 +13,9 @@ public class Phone : Item
     private bool reply = false;
     public int count = 0;
     public Material material;
-    public TMP_Text text;
+    public TextMeshPro text;
+    public TMP_Text laptopText;
+    public Color color;
     void Start()
     {
         Instance = this;
@@ -27,20 +29,39 @@ public class Phone : Item
             {
                 case 0:
                     text.text = "The deadline has been advanced by two days! Prepare materials for the meeting now.";
+                    TText(text);
+                    laptopText.text += "\nReply";
                     count++;
                     hasWord = true;
-                    Laptop.on = true;
+                    Laptop.Instance.turnOn();
+                    flag = false;   
                     break;
                 case 1:
                     text.text = ("Haven't you finished yet? $%$%#!!$#%..");
+                    TText(text);
+                    laptopText.text += "\nReply";
                     count++;
                     hasWord = true;
+                    flag = false;
                     break;
                 case 2:
                     text.text = ("Your rent &*@$*#@!#@..");
+                    TText(text);
+                    laptopText.text += "\nReply";
                     count++;
                     hasWord = true;
+                    flag = false;
                     break;
+               case 3:
+                    text.text = ("You are fired.");
+                    laptopText.text += "\nError\nError\nError\nError\nError\nError";
+                    laptopText.color = Color.red;
+                    count++;
+                    hasWord = true;
+                    Laptop.end = true;
+                    Laptop.Instance.turnOn();
+                    break;
+
             }
             
         }
@@ -50,22 +71,48 @@ public class Phone : Item
             reply = true;
             switch(count)
             {
-                case 0:
-                    text.color = Color.blue;
-                    text.text = "No problem.";
-                    break;
                 case 1:
-                    text.color = Color.blue;
-                    text.text = "Almost done.";
+                    text.color = Color.green;
+                    text.text = "No problem.";
+                    laptopText.text += "\nSend";
                     break;
                 case 2:
-                    text.color = Color.blue;
+                    text.color = Color.green;
+                    text.text = "Almost done.";
+                    laptopText.text += "\nSend";
+                    break;
+                case 3:
+                    text.color = Color.green;
                     text.text = "Just give me one more day.";
+                    laptopText.text += "\nSend";
+                    break;
+                default:
                     break;
             }
         }
         else if (reply)
         {
+            switch (count)
+            {
+                case 1:
+                    laptopText.text += "\nPrint materials for meeting";
+                    Printer.flag = true;
+                    tween.Kill();
+                    break;
+                case 2:
+                    laptopText.text += "\nCollect papers";
+                    Paper.flag = true;
+                    tween.Kill();
+                    break;
+                case 3:
+                    laptopText.text += "\nContinue";
+                    Paper.flag = true;
+                    tween.Kill();
+                    break;
+                default:
+                    break;
+            }
+            tween.Kill();
             text.color = new Vector4(229, 123, 33, 255);
             text.text = "";
             material.DOColor(Color.black, 1);
@@ -78,10 +125,18 @@ public class Phone : Item
 
     public void NewMessage()
     {
+        text.color = color;
         text.text = "You have a new message";
         material.color = Color.white;
         flag = true;
 
         //sfx 收到消息提示音
+    }
+
+    Tween tween;
+    public void TText(TMP_Text content)
+    {
+        string text = content.text;
+        tween = DOTween.To(() => string.Empty, value => content.text = value, text, 2).OnComplete(()=> flag = true);
     }
 }
