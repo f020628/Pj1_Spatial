@@ -6055,10 +6055,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 404714014358428336, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
+    - {fileID: 8940200711735466092, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 668058807062448390, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 869659068}
   m_SourcePrefab: {fileID: 100100000, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
+--- !u!1 &869659067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 668058807062448390, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
+  m_PrefabInstance: {fileID: 869659066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &869659068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869659067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!1 &871994318
 GameObject:
   m_ObjectHideFlags: 0
@@ -9047,7 +9069,7 @@ MonoBehaviour:
   m_text: Find meeting time
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 81b54885668149945b69896c69301e4b, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9136,7 +9158,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 81b54885668149945b69896c69301e4b, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

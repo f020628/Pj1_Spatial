@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ab7706c5-99d2-4db2-9d51-06c4317a1832}">
+		<property name="assetPath">
+			<value>Scene/大声欢呼1－xh20070418.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>34.481632653061226</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7173f6dc-0efe-4904-ac67-46c7a3d46724}</destination>
+		</relationship>
+	</object>
+</objects>

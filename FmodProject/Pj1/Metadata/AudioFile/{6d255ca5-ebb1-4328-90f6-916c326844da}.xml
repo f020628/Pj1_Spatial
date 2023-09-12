@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6d255ca5-ebb1-4328-90f6-916c326844da}">
+		<property name="assetPath">
+			<value>Scene/alarm-clock-digital.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>29.9145</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7173f6dc-0efe-4904-ac67-46c7a3d46724}</destination>
+		</relationship>
+	</object>
+</objects>
