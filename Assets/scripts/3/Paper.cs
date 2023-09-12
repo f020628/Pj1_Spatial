@@ -13,21 +13,21 @@ public class Paper : Item
     {
         if (flag && !used)
         {
-            if (count == 2)
+            if (count == 1)
             {
-                Phone.Instance.count++;
+               // Phone.Instance.count++;
                 Phone.Instance.NewMessage();
                 flag = false;
             }
-            else if (count == 4)
+            else if (count == 3)
             {
-                Phone.Instance.count++;
+               // Phone.Instance.count++;
                 Phone.Instance.NewMessage();
                 flag = false;
             }
             else if(count == 6)
             {
-                Phone.Instance.count++;
+               // Phone.Instance.count++;
                 Phone.Instance.NewMessage();
                 flag = false;
             }

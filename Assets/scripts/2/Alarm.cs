@@ -11,9 +11,10 @@ public class Alarm : Item
 
     void Start()
     {
+        //sfx Ñ­»··Å
         tween1 = transform.DOShakePosition(0.2f, 0.07f, 7, 60, false, false).SetLoops(-1);
         tween2 = CameraControl.Instance.characterCam.DOShakePosition(0.4f, 0.03f, 4, 60, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*ring ring ring*", 0.4f); tween2.Restart(); 
-        FMODUnity.RuntimeManager.PlayOneShot("event:/alarm", transform.position);
+        //FMODUnity.RuntimeManager.PlayOneShot("event:/alarm", transform.position);
         }) ;
         
     }
@@ -24,6 +25,7 @@ public class Alarm : Item
         tween2.Kill();
         Title.Instance.DisplayEnvironment("",0);
         Curtain.flag = true;
+        //vfx stop
     }
 
 }

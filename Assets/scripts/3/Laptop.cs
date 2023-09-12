@@ -18,17 +18,17 @@ public class Laptop : Item
 
     public override void OnInteract()
     {
-        if (flag && !on)
+        if (flag && !on && !end)
         {
             Note.flag = true;
             turnOn();
             Player.Instance.moveFlag = true;
         }
-        else if (flag && on)
+        else if (flag && on &&!end)
         {
             turnOff();
         }
-        else if (end)
+        if (end)
         {
             GameManager.Instance.LoadNextLevel();
         }

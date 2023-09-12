@@ -27,7 +27,7 @@ public class Cup : Item
 
     private void BlackOut()
     {
-        GameManager.Instance.Blackout();
+        GameManager.Instance.DrinkBlackout();
     }
 
 }

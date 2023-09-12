@@ -23,6 +23,7 @@ public class Phone : Item
 
     public override void OnInteract()
     {
+        
         if (flag && !hasWord && !reply)
         {
             switch (count)
@@ -37,6 +38,7 @@ public class Phone : Item
                     flag = false;   
                     break;
                 case 1:
+                    Debug.Log(flag.ToString() + count.ToString());
                     text.text = ("Haven't you finished yet? $%$%#!!$#%..");
                     TText(text);
                     laptopText.text += "\nReply";
@@ -97,17 +99,17 @@ public class Phone : Item
                 case 1:
                     laptopText.text += "\nPrint materials for meeting";
                     Printer.flag = true;
-                    tween.Kill();
+                    tween.Kill(true);
                     break;
                 case 2:
                     laptopText.text += "\nCollect papers";
                     Paper.flag = true;
-                    tween.Kill();
+                    tween.Kill(true);
                     break;
                 case 3:
                     laptopText.text += "\nContinue";
                     Paper.flag = true;
-                    tween.Kill();
+                    tween.Kill(true);
                     break;
                 default:
                     break;

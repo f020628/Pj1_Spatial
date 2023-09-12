@@ -2753,7 +2753,6 @@ GameObject:
   - component: {fileID: 360091284}
   - component: {fileID: 360091289}
   - component: {fileID: 360091290}
-  - component: {fileID: 360091291}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -2843,18 +2842,6 @@ MonoBehaviour:
   currentScene: 0
   blackout: {fileID: 104501840}
   volume: {fileID: 1073143134}
---- !u!114 &360091291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360091283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c4867a9e2af4fd49b03cd7bdd1c415a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &361826441 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400030, guid: abf604235fd5ccd4798c42e6b60b0ae4, type: 3}

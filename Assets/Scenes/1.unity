@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.42480737, g: 0.4566325, b: 0.48138767, a: 1}
+  m_IndirectSpecularColor: {r: 0.42477393, g: 0.45658004, b: 0.48129404, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2338,7 +2338,7 @@ GameObject:
   - component: {fileID: 263987271}
   - component: {fileID: 263987273}
   - component: {fileID: 263987272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_762798
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2934,7 +2934,7 @@ GameObject:
   - component: {fileID: 417859869}
   - component: {fileID: 417859871}
   - component: {fileID: 417859870}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Jacket_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3086,7 +3086,7 @@ GameObject:
   - component: {fileID: 448893800}
   - component: {fileID: 448893802}
   - component: {fileID: 448893801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_762026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3603,7 +3603,7 @@ GameObject:
   - component: {fileID: 546483028}
   - component: {fileID: 546483030}
   - component: {fileID: 546483029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1439307
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4707,7 +4707,7 @@ GameObject:
   - component: {fileID: 707528094}
   - component: {fileID: 707528096}
   - component: {fileID: 707528095}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1506279
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6155,7 +6155,7 @@ GameObject:
   - component: {fileID: 885438498}
   - component: {fileID: 885438500}
   - component: {fileID: 885438499}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1438298
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6761,7 +6761,7 @@ GameObject:
   - component: {fileID: 1002734169}
   - component: {fileID: 1002734171}
   - component: {fileID: 1002734170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1439306
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6844,7 +6844,7 @@ GameObject:
   - component: {fileID: 1004949987}
   - component: {fileID: 1004949989}
   - component: {fileID: 1004949988}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloth (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8536,7 +8536,7 @@ GameObject:
   - component: {fileID: 1227920512}
   - component: {fileID: 1227920514}
   - component: {fileID: 1227920513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_787193
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9455,7 +9455,7 @@ GameObject:
   - component: {fileID: 1274128249}
   - component: {fileID: 1274128251}
   - component: {fileID: 1274128250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1249554
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10039,7 +10039,7 @@ GameObject:
   - component: {fileID: 1330167701}
   - component: {fileID: 1330167703}
   - component: {fileID: 1330167702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1506376 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10652,7 +10652,7 @@ GameObject:
   - component: {fileID: 1412966941}
   - component: {fileID: 1412966943}
   - component: {fileID: 1412966942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1249553
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10916,7 +10916,7 @@ GameObject:
   - component: {fileID: 1430161163}
   - component: {fileID: 1430161165}
   - component: {fileID: 1430161164}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_787876
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12984,7 +12984,7 @@ GameObject:
   - component: {fileID: 1791801394}
   - component: {fileID: 1791801396}
   - component: {fileID: 1791801395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1506290
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13235,7 +13235,7 @@ GameObject:
   - component: {fileID: 1846454394}
   - component: {fileID: 1846454396}
   - component: {fileID: 1846454395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1506376
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15079,7 +15079,7 @@ GameObject:
   - component: {fileID: 1983429006}
   - component: {fileID: 1983429008}
   - component: {fileID: 1983429007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shirt_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15473,8 +15473,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2036807910}
   - component: {fileID: 2036807912}
-  - component: {fileID: 2036807911}
-  m_Layer: 0
+  - component: {fileID: 2036807913}
+  m_Layer: 6
   m_Name: Cloth (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15510,7 +15510,21 @@ Transform:
   - {fileID: 1330167701}
   m_Father: {fileID: 990420683}
   m_LocalEulerAnglesHint: {x: 12.725, y: 0, z: 0}
---- !u!65 &2036807911
+--- !u!114 &2036807912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036807909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8060c9f8523eea8448ab1ad7f5092ad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: N/A
+  content: Interacted
+--- !u!65 &2036807913
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15529,22 +15543,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.45670152, y: 0.66105026, z: 0.9999999}
-  m_Center: {x: -0.0015072227, y: -0.16947414, z: -0.000003698981}
---- !u!114 &2036807912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036807909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8060c9f8523eea8448ab1ad7f5092ad2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: N/A
-  content: Interacted
+  m_Size: {x: 0.46421015, y: 0.48880398, z: 5.8726234}
+  m_Center: {x: -0.0034472048, y: -0.015863502, z: 2.4363084}
 --- !u!1 &2048121895
 GameObject:
   m_ObjectHideFlags: 0
@@ -16897,7 +16897,7 @@ GameObject:
   - component: {fileID: 2123125706}
   - component: {fileID: 2123125708}
   - component: {fileID: 2123125707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pattern2D_1434309
   m_TagString: Untagged
   m_Icon: {fileID: 0}

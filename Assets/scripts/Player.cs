@@ -44,14 +44,6 @@ public class Player : MonoBehaviour
             }
         }
 
-        float zRotation = 0;
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            zRotation = zRotation == 0 ? 180 : 0;
-            allowed = false;
-            Vector3 target = new(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, zRotation);
-            transform.DOLocalRotate(target, 1, RotateMode.Fast).OnComplete(() => Player.Instance.allowed = true);
-        }
     }
 
     private void FixedUpdate()
