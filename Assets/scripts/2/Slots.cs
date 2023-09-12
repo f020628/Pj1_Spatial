@@ -18,7 +18,7 @@ public class Slots : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        //sfx 欢呼/电子叮咚（成功命中
+        FMODUnity.RuntimeManager.PlayOneShot("event:/cheer", transform.position);
         if (collision.collider.CompareTag("Basketball"))
         {
             count++;

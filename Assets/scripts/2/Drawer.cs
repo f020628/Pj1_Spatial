@@ -17,7 +17,7 @@ public class Drawer : Item
             Vector3 target = open ? startPos : endPos;
             transform.DOLocalMove(target, 1.5f);
             open = !open;
-            //sfx ³éÌë
+            FMODUnity.RuntimeManager.PlayOneShot("event:/drawer", transform.position);
         }
     }
 }

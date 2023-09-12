@@ -26,7 +26,7 @@ public class Basketball : Item
                         transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
                         transform.GetComponent<Rigidbody>().AddForce(CameraControl.Instance.gameObject.transform.forward * 140f);
                         hold = false;
-                        //sfx 发射东西的声音（投篮
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/shootBasket", transform.position); 
                     }
                     else
                     {

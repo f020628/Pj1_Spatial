@@ -2,7 +2,8 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using FMODUnity;
+using FMOD.Studio;
 public class Alarm2 : Item
 {
     Tween tween1;
@@ -11,7 +12,8 @@ public class Alarm2 : Item
     void Start()
     {
         tween1 = transform.DOShakePosition(0.5f, 0.5f, 10, 60, false, false).SetLoops(-1);
-        tween2 = CameraControl.Instance.characterCam.DOShakePosition(0.4f, 0.05f, 4, 60, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*Beep Beep*", 0.4f); tween2.Restart(); //sfx µç×ÓÄÖÖÓ
+        tween2 = CameraControl.Instance.characterCam.DOShakePosition(0.4f, 0.05f, 4, 60, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*Beep Beep*", 0.4f); tween2.Restart(); 
+        FMODUnity.RuntimeManager.PlayOneShot("event:/alarm_dig", transform.position);
         });
 
     }

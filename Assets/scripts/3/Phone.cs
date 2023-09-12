@@ -130,7 +130,7 @@ public class Phone : Item
         material.color = Color.white;
         flag = true;
 
-        //sfx 收到消息提示音
+        FMODUnity.RuntimeManager.PlayOneShot("event:/notify", transform.position);
     }
 
     Tween tween;

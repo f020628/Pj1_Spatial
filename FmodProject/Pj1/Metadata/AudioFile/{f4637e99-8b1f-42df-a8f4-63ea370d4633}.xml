@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f4637e99-8b1f-42df-a8f4-63ea370d4633}">
+		<property name="assetPath">
+			<value>Scene/basket-ball.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>52.6362358276644</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7173f6dc-0efe-4904-ac67-46c7a3d46724}</destination>
+		</relationship>
+	</object>
+</objects>

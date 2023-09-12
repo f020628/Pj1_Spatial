@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{173ef5a9-f468-4da4-921c-167dfed5bf28}">
+		<property name="assetPath">
+			<value>Scene/drawer_wood_close.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.94129166666666664</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7173f6dc-0efe-4904-ac67-46c7a3d46724}</destination>
+		</relationship>
+	</object>
+</objects>
