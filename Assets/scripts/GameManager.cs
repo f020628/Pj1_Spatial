@@ -28,11 +28,12 @@ public class GameManager : MonoBehaviour
         }
         else if(currentScene == 2)
         {
-
+            //sfx Í£Ö¹Äñ½Ð
             Player.Instance.transform.localScale = new Vector3(1, 1, 1);
         }
         else if(currentScene == 3)
         {
+            //sfx Í£Ö¹³æ½Ð
         }
         
         Blackout();
@@ -52,6 +53,13 @@ public class GameManager : MonoBehaviour
         blackout.gameObject.SetActive(true);
         var value = blackout.DOColor(Color.black, 3.1f).SetLoops(2, LoopType.Yoyo).OnComplete(() => { blackout.gameObject.SetActive(false); Player.Instance.allowed = true; });
     }
+
+    public void BlackoutEnd()
+    {
+        blackout.gameObject.SetActive(true);
+        var value = blackout.DOColor(Color.black, 3.1f).OnComplete(() => { Application.Quit(); });
+    }
+
     public void LoadS()
     {
         SceneManager.LoadScene(currentScene);

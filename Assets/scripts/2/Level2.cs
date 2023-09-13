@@ -20,6 +20,7 @@ public class Level2 : MonoBehaviour
 
     void Start()
     {
+        //sfx ÔçÉÏÄñ½Ð
         Player.Instance.transform.SetPositionAndRotation(new Vector3(-3.14f, 1.14f, -1.58f), Quaternion.Euler(new Vector3(0, 90, -91.2f)));
         Player.Instance.moveFlag = false;
         player.transform.DORotate(new Vector3(0, 90, 0), 2).OnComplete(() => { Player.Instance.moveFlag = true; }).SetDelay(2);
