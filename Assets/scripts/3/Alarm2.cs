@@ -22,6 +22,8 @@ public class Alarm2 : Item
 
     public override void OnInteract()
     {
+
+        CameraControl.Instance.transform.DOLocalMove(new Vector3(0, 0.638f, 0), 1);
         tween1.Kill();
         tween2.Kill();
         Title.Instance.DisplayEnvironment("",0);

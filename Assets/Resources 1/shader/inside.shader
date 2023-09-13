@@ -1,4 +1,4 @@
-Shader "Unlit/inside"
+Shader "inside"
 {
     Properties
     {

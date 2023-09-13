@@ -32,6 +32,11 @@ GraphicsSettings:
   - {fileID: 15105, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 15106, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: 541b492b38007ef48b462b56f7ed9925, type: 3}
+  - {fileID: 4800000, guid: 9812e949c561fc544adbf6733f9ffa48, type: 3}
+  - {fileID: 4800000, guid: 9bb5931b943c26e4ebe7f1b9e5e4cde0, type: 3}
+  - {fileID: 4800000, guid: bd024a285dd20e648ab063cdcd2cbfb3, type: 3}
+  - {fileID: 4800000, guid: 02f292f1899d0c841ba2fefe6c3a2592, type: 3}
   - {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
   m_PreloadedShaders: []
   m_PreloadShadersBatchTimeLimit: -1
@@ -59,7 +64,7 @@ GraphicsSettings:
   m_LightsUseLinearIntensity: 0
   m_LightsUseColorTemperature: 1
   m_DefaultRenderingLayerMask: 1
-  m_LogWhenShaderIsCompiled: 0
+  m_LogWhenShaderIsCompiled: 1
   m_SRPDefaultSettings:
     UnityEngine.Rendering.Universal.UniversalRenderPipeline: {fileID: 11400000, guid: db34787f2de21734b98a02ca69475a62, type: 2}
   m_LightProbeOutsideHullStrategy: 0

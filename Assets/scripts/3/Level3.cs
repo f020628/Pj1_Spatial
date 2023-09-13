@@ -13,10 +13,12 @@ public class Level3 : MonoBehaviour
         NIGHT = RuntimeManager.CreateInstance("event:/day");
         NIGHT.start();
         Player.Instance.allowed = false;
+        Player.Instance.transform.localRotation = Quaternion.identity;
         Player.Instance.transform.position = new Vector3(-0.434f, 0.946f, 0.884f);
-        CameraControl.Instance.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 90));
+        CameraControl.Instance.transform.localPosition = new Vector3(0, 0.473f, 0.638f);
+        CameraControl.Instance.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90));
         CameraControl.Instance.transform.DORotate(new Vector3(-0.434f, 0.946f, 0.884f), 1.5f).OnComplete(()=>{ CameraControl.Instance.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0)); Player.Instance.allowed = true;
-            Player.Instance.moveFlag = false; }).SetDelay(2);
+        Player.Instance.moveFlag = false; }).SetDelay(2);
     }
 
     

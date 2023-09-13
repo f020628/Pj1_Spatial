@@ -1,4 +1,4 @@
-Shader "Unlit/light"
+Shader "light"
 {
     Properties
     {
@@ -6,11 +6,10 @@ Shader "Unlit/light"
         _Intensity("Intensity", Range(0,1)) = 1.0
         _Pow("pow",Range(1,3)) = 1
 
-        _Texture("back texture", 2D) = "black"{}
     }
     SubShader
     {
-        Tags { "RenderPipeline" = "UniversalRenderPipeline" "RenderType" = "Transparent" "Queue" = "AlphaTest+100"}
+        Tags { "RenderType" = "Transparent" "Queue" = "AlphaTest+100"}
         LOD 100
         Blend SrcAlpha OneMinusSrcAlpha
         ZWrite off
