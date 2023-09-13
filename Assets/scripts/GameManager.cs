@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using FMODUnity;
+using FMOD.Studio;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,12 +30,12 @@ public class GameManager : MonoBehaviour
         }
         else if(currentScene == 2)
         {
-            //sfx Í£Ö¹Äñ½Ð
+            Level2.DAY.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             Player.Instance.transform.localScale = new Vector3(1, 1, 1);
         }
         else if(currentScene == 3)
         {
-            //sfx Í£Ö¹³æ½Ð
+            Level3.NIGHT.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }
         
         Blackout();

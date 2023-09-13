@@ -2,16 +2,20 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class Alarm : Item
 {
 
     Tween tween1;
     Tween tween2;
-
+    EventInstance myEventInstance;
+    
     void Start()
-    {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/alarm", transform.position);
+    {   
+        myEventInstance = RuntimeManager.CreateInstance("event:/alarm");
+        myEventInstance.start();
         tween1 = transform.DOShakePosition(0.2f, 0.07f, 7, 60, false, false).SetLoops(-1);
         tween2 = CameraControl.Instance.characterCam.DOShakePosition(0.4f, 0.03f, 4, 60, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*ring ring ring*", 0.4f); tween2.Restart(); 
         
@@ -25,7 +29,7 @@ public class Alarm : Item
         tween2.Kill();
         Title.Instance.DisplayEnvironment("",0);
         Curtain.flag = true;
-        FMODUnity.RuntimeManager.PauseAllEvents(true);
+        myEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
 }

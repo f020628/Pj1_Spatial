@@ -1,5 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class Level2 : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class Level2 : MonoBehaviour
 
     public Light pointLight;
     public Light pointLight2;
+    public static EventInstance DAY;
     public void Awake()
     {
         player = Player.Instance.gameObject;
@@ -20,7 +23,8 @@ public class Level2 : MonoBehaviour
 
     void Start()
     {
-        //sfx ÔçÉÏÄñ½Ð
+        DAY = RuntimeManager.CreateInstance("event:/day");
+        DAY.start();
         Player.Instance.transform.SetPositionAndRotation(new Vector3(-3.14f, 1.14f, -1.58f), Quaternion.Euler(new Vector3(0, 90, -91.2f)));
         Player.Instance.moveFlag = false;
         player.transform.DORotate(new Vector3(0, 90, 0), 2).OnComplete(() => { Player.Instance.moveFlag = true; }).SetDelay(2);
@@ -40,7 +44,7 @@ public class Level2 : MonoBehaviour
             wearing++;
         }
         else
-        {
+        {  
             FMODUnity.RuntimeManager.PlayOneShot("event:/knockdoor", transform.position);
             Title.Instance.DisplayEnvironment("Pack your bag, hurry up!",2);
             Drawer.flag = true;

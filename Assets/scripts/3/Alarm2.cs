@@ -8,10 +8,11 @@ public class Alarm2 : Item
 {
     Tween tween1;
     Tween tween2;
-
+    EventInstance myEventInstance1;
     void Start()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/alarm_dig", transform.position);
+        myEventInstance1 = RuntimeManager.CreateInstance("event:/alarm_dig");
+        myEventInstance1.start();
         tween1 = transform.DOShakePosition(0.5f, 0.5f, 10, 60, false, false).SetLoops(-1);
         tween2 = CameraControl.Instance.characterCam.DOShakePosition(0.4f, 0.05f, 4, 60, false).SetLoops(-1).OnStepComplete(() => { Title.Instance.DisplayEnvironment("*Beep Beep*", 0.4f); tween2.Restart();
         
@@ -26,7 +27,7 @@ public class Alarm2 : Item
         Title.Instance.DisplayEnvironment("",0);
         Laptop.flag = true;
         transform.localPosition = new Vector3(-3.408913f, 3.08f, -3.118796f);
-        FMODUnity.RuntimeManager.PauseAllEvents(true);
+        myEventInstance1.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         
     }
 }

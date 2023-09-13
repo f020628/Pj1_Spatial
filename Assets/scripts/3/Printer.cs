@@ -21,7 +21,6 @@ public class Printer : Item
             Title.Instance.Display("Oh my...");
             Paper.flag = true;
             flag = false;
-            //sfx ��ӡ������/����
             FMODUnity.RuntimeManager.PlayOneShot("event:/printer", transform.position);
         }
 
