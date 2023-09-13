@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,7 @@ public class Handle : Item
     private bool rev = false;
     public static bool flag = false;
     public Sprite image;
+    public Sprite backImage;
     private bool drop = false;
     void Update()
     {
@@ -23,14 +25,14 @@ public class Handle : Item
         {
             drop = true;
             rev = !rev;
-            Level2.Instance.Reverse();
+            Reverse();
         }
     }
     public override bool OnLook()
     {
         if (flag)
         {
-            Title.Instance.image.sprite = image;
+            Title.Instance.image.sprite = rev ? backImage : image;
             return true;
         }
         return false;
@@ -41,5 +43,14 @@ public class Handle : Item
         drop = false;
         GetComponent<Rigidbody>().velocity = Vector3.zero;
         GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+    }
+
+    float zRotation = 0;
+    public void Reverse()
+    {
+        zRotation = zRotation == 0 ? 180 : 0;
+        Player.Instance.allowed = false;
+        Vector3 target = new(Player.Instance.transform.rotation.eulerAngles.x, Player.Instance.transform.rotation.eulerAngles.y, zRotation);
+        Player.Instance.transform.DOLocalRotate(target, 1, RotateMode.Fast).OnComplete(() => Player.Instance.allowed = true);
     }
 }

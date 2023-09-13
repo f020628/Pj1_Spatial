@@ -25,15 +25,6 @@ public class Level2 : MonoBehaviour
         player.transform.DORotate(new Vector3(0, 90, 0), 2).OnComplete(() => { Player.Instance.moveFlag = true; }).SetDelay(2);
     }
 
-    float zRotation = 0;
-
-    public void Reverse()
-    {
-        zRotation = zRotation == 0 ? 180 : 0;
-        Player.Instance.allowed = false;
-        Vector3 target = new(Player.Instance.transform.rotation.eulerAngles.x, Player.Instance.transform.rotation.eulerAngles.y, zRotation);
-        player.transform.DOLocalRotate(target, 1, RotateMode.Fast).OnComplete(() => Player.Instance.allowed = true);
-    }
 
     public void WearingCheck()
     {

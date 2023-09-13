@@ -22,6 +22,7 @@ public class Laptop : Item
         {
             Note.flag = true;
             turnOn();
+            Handle.flag = true;
             Player.Instance.moveFlag = true;
         }
         else if (flag && on &&!end)
