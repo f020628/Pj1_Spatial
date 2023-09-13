@@ -40,7 +40,7 @@ public class Level2 : MonoBehaviour
         }
         else
         {
-            //sfx Ì¨´Ê
+            FMODUnity.RuntimeManager.PlayOneShot("event:/knockdoor", transform.position);
             Title.Instance.DisplayEnvironment("Pack your bag, hurry up!",2);
             Drawer.flag = true;
             Pencils.flag = true;
