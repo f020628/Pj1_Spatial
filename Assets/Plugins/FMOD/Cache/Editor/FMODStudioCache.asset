@@ -74,13 +74,13 @@ MonoBehaviour:
     Data4: 1730410620
   Banks:
   - {fileID: -4396692244205702959}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 18202
 --- !u!114 &-5184361193014601653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +123,10 @@ MonoBehaviour:
   Path: FmodProject/Pj1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638301566132059161
+  lastModified: 638301570050536983
   FileSizes:
   - Name: Desktop
-    Value: 2245216
+    Value: 3798208
   Exists: 1
 --- !u!114 &-2071380855910270581
 MonoBehaviour:
@@ -143,7 +143,7 @@ MonoBehaviour:
   Path: FmodProject/Pj1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638301566132075041
+  lastModified: 638301570050547016
   FileSizes:
   - Name: Desktop
     Value: 1226
@@ -235,7 +235,7 @@ MonoBehaviour:
   - {fileID: -4396692244205702959}
   StringsBanks:
   - {fileID: -2071380855910270581}
-  cacheTime: 638301566132075041
+  cacheTime: 638301570050547016
   cacheVersion: 131607
 --- !u!114 &654677824904868694
 MonoBehaviour:
@@ -392,10 +392,10 @@ MonoBehaviour:
     Data4: -1106706642
   Banks:
   - {fileID: -4396692244205702959}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 100000
