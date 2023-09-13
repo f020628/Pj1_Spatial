@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7684625489692752301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/knockdoor
+  m_EditorClassIdentifier: 
+  Path: event:/knockdoor
+  Guid:
+    Data1: -1824669892
+    Data2: 1116309224
+    Data3: -731256666
+    Data4: 449813419
+  Banks:
+  - {fileID: -4396692244205702959}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
 --- !u!114 &-6725874809982219586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,10 +96,10 @@ MonoBehaviour:
   Path: FmodProject/Pj1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638301334076402362
+  lastModified: 638301464420857666
   FileSizes:
   - Name: Desktop
-    Value: 2155040
+    Value: 2244928
   Exists: 1
 --- !u!114 &-2071380855910270581
 MonoBehaviour:
@@ -89,10 +116,10 @@ MonoBehaviour:
   Path: FmodProject/Pj1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638301334076412365
+  lastModified: 638301464420859814
   FileSizes:
   - Name: Desktop
-    Value: 1094
+    Value: 1134
   Exists: 1
 --- !u!114 &-1465201247928243591
 MonoBehaviour:
@@ -173,12 +200,13 @@ MonoBehaviour:
   - {fileID: -6725874809982219586}
   - {fileID: 654677824904868694}
   - {fileID: -1465201247928243591}
+  - {fileID: -7684625489692752301}
   EditorParameters: []
   MasterBanks:
   - {fileID: -4396692244205702959}
   StringsBanks:
   - {fileID: -2071380855910270581}
-  cacheTime: 638301334076412365
+  cacheTime: 638301464420859814
   cacheVersion: 131607
 --- !u!114 &654677824904868694
 MonoBehaviour:
