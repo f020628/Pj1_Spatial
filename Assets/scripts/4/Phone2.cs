@@ -5,7 +5,7 @@ using UnityEngine;
 public class Phone2 : Item
 {
     private bool hold = false;
-    private bool picked = false;
+    public static bool picked = false;
     public Vector3 pos1;
     public Vector3 pos2;
     public override void OnInteract()

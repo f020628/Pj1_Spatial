@@ -52,7 +52,7 @@ public class Drinking : MonoBehaviour
                     emptyChecks[i] = true;
                     cup.transform.GetChild(1).gameObject.SetActive(true);
                     cup.full = true;
-                    Title.Instance.Display("Need some more.");
+                    Title.Instance.Display("Let's have some more.");
                     bottle.transform.GetChild(0).gameObject.SetActive(false);
                 }
                 else if (!emptyChecks[i] && cup.full)
@@ -61,7 +61,7 @@ public class Drinking : MonoBehaviour
                 }
                 else
                 {
-                    Title.Instance.Display("It's empty...so does my wallet.");
+                    Title.Instance.Display("It's empty...like my wallet.");
                 }
                    
             }
@@ -75,6 +75,11 @@ public class Drinking : MonoBehaviour
     float rotateX = -2f;
     float rotateZ = -2f;
     public void Drunk()
+    {
+        Invoke(nameof(Drunk2), 3);
+    }
+
+    private void Drunk2()
     {
         drunkLevel++;
         switch (drunkLevel)

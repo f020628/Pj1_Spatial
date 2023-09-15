@@ -2782,6 +2782,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 289217030260962296, guid: 709f728adac0aa7429fe909ab46affd0, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5884515541960674240, guid: 709f728adac0aa7429fe909ab46affd0, type: 3}
       propertyPath: m_Drag
       value: 100
@@ -2792,7 +2796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905910688415910056, guid: 709f728adac0aa7429fe909ab46affd0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.493
+      value: -1.371
       objectReference: {fileID: 0}
     - target: {fileID: 5905910688415910056, guid: 709f728adac0aa7429fe909ab46affd0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2800,7 +2804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5905910688415910056, guid: 709f728adac0aa7429fe909ab46affd0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.851
+      value: -1.789
       objectReference: {fileID: 0}
     - target: {fileID: 5905910688415910056, guid: 709f728adac0aa7429fe909ab46affd0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6928,6 +6932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 89.79
       objectReference: {fileID: 0}
+    - target: {fileID: 5159052088652700678, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
+      propertyPath: near clip plane
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 6369742052689657557, guid: 5770478536cbf1e4f88f937d29249402, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8048,6 +8056,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2c8ff7d943300664bbd58c66ed810562, type: 3}
       propertyPath: m_Name
       value: AC
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2c8ff7d943300664bbd58c66ed810562, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2c8ff7d943300664bbd58c66ed810562, type: 3}
       propertyPath: m_StaticEditorFlags

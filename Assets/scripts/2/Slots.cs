@@ -27,6 +27,7 @@ public class Slots : MonoBehaviour
         if (count == 3)
         {
             Basketball.Instance.transform.DOMove(CameraControl.Instance.transform.position, 1.2f).OnComplete(Fall);
+            Basketball.flag = false;
         }
     }
 

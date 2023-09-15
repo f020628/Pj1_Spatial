@@ -107,7 +107,7 @@ public class Phone : Item
                     tween.Kill(true);
                     break;
                 case 3:
-                    laptopText.text += "\nContinue";
+                    laptopText.text += "\nCollect papers";
                     Paper.flag = true;
                     tween.Kill(true);
                     break;

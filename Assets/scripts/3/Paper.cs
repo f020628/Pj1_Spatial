@@ -38,6 +38,7 @@ public class Paper : Item
         else
         {
             Title.Instance.Display("Not now...");
+            Debug.Log(used);
         }
     }
 

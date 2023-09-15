@@ -24,7 +24,7 @@ public class CameraControl : MonoBehaviour
     {
         Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width/2 , Screen.height/2));
         RaycastHit hit;
-        if(Physics.Raycast(ray, out hit, 1.6f, 1 << 6))
+        if(Physics.Raycast(ray, out hit, 1.9f, 1 << 6))
         {
             //Debug.Log(hit.collider.gameObject.GetComponent<Item>());
             if (hit.collider.gameObject.GetComponent<Item>() != null)

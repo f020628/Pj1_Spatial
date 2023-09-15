@@ -19,7 +19,6 @@ public class Printer : Item
         {
             Fly();
             Title.Instance.Display("Oh my...");
-            Paper.flag = true;
             flag = false;
             FMODUnity.RuntimeManager.PlayOneShot("event:/printer", transform.position);
         }
@@ -30,7 +29,7 @@ public class Printer : Item
     {
         for(int i = 0; i < papers.Length; i++)
         {
-            papers[i].transform.DOMove(trans[i].position, 1.5f);
+            papers[i].transform.DOMove(trans[i].position, 1.5f).OnComplete(()=>Paper.flag = true);
             papers[i].transform.DOShakeRotation(1.5f);
         }
     }

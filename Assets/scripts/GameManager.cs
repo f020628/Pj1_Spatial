@@ -24,8 +24,10 @@ public class GameManager : MonoBehaviour
     public void LoadNextLevel()
     {
         currentScene++;
+        Debug.Log(currentScene);
         if(currentScene == 1)
         {
+            
             Player.Instance.transform.localScale = new Vector3(1, 0.7f, 1);
         }
         else if(currentScene == 2)
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
         else if(currentScene == 3)
         {
             Level3.NIGHT.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            Player.Instance.allowed = false;
         }
         
         Blackout();
@@ -46,7 +49,8 @@ public class GameManager : MonoBehaviour
     public void DrinkBlackout()
     {
         blackout.gameObject.SetActive(true);
-        var value = blackout.DOColor(Color.black, 3.1f).SetLoops(2, LoopType.Yoyo).OnComplete( () => { blackout.gameObject.SetActive(false); Player.Instance.allowed = true; Drinking.Instance.Drunk(); } ); 
+        var value = blackout.DOColor(Color.black, 3.1f).SetLoops(2, LoopType.Yoyo).OnComplete( () => { blackout.gameObject.SetActive(false); Player.Instance.allowed = true; } );
+        Drinking.Instance.Drunk();
     }
 
 

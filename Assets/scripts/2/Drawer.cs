@@ -19,5 +19,9 @@ public class Drawer : Item
             open = !open;
             FMODUnity.RuntimeManager.PlayOneShot("event:/drawer", transform.position);
         }
+        else if(Curtain.flag)
+        {
+            Title.Instance.Display("Have to put my cloth on.");
+        }
     }
 }
